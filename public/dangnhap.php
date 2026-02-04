@@ -444,7 +444,7 @@
               <li>
                 <a
                   class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-colors"
-                  href="#"
+                  href="quanlytindang.php"
                   >Đăng tin tuyển dụng</a
                 >
               </li>

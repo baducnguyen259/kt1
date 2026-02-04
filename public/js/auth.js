@@ -95,7 +95,10 @@ function checkAuth() {
 
   if (token && authButtons) {
     authButtons.innerHTML = `
-        <a href="dangtuyen.php" class="hidden sm:flex h-9 px-4 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors mr-2">
+        <a href="quanlytindang.php" class="hidden lg:block text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary mr-2">
+            Quản lý tin
+        </a>
+        <a href="dangtin.php" class="hidden sm:flex h-9 px-4 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors mr-2">
             Đăng tin
         </a>
         <a href="trangthai.php" class="hidden lg:block text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary mr-2">

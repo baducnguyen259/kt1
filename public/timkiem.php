@@ -81,7 +81,7 @@
           </div>
           <div id="auth-buttons" class="flex items-center gap-3">
             <a class="hidden sm:flex h-9 px-4 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors mr-2"
-              href="dangtuyen.php">Đăng tin</a>
+              href="quanlytindang.php#post-job-section">Đăng tin</a>
             <a href="dangnhap.php"
               class="hidden sm:flex h-9 px-4 items-center justify-center rounded-lg text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
               Đăng nhập
@@ -594,24 +594,8 @@
             </div>
           </div>
         </div>
-        <div class="mt-10 flex justify-center">
-          <nav aria-label="Pagination" class="flex gap-2">
-            <a class="h-10 w-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800"
-              href="#">
-              <span class="material-symbols-outlined text-sm">chevron_left</span>
-            </a>
-            <a class="h-10 w-10 flex items-center justify-center rounded-lg bg-primary text-white font-medium shadow-sm shadow-blue-500/30"
-              href="#">1</a>
-            <a class="h-10 w-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 font-medium"
-              href="#">2</a>
-            <a class="h-10 w-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 font-medium"
-              href="#">3</a>
-            <span class="h-10 w-10 flex items-center justify-center text-slate-400">...</span>
-            <a class="h-10 w-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800"
-              href="#">
-              <span class="material-symbols-outlined text-sm">chevron_right</span>
-            </a>
-          </nav>
+        <div id="pagination-container-jobs" class="mt-10">
+          <!-- Phân trang sẽ được tải vào đây bằng JavaScript -->
         </div>
       </div>
     </main>
@@ -708,7 +692,7 @@
             </h3>
             <ul class="space-y-3">
               <li>
-                <a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Đăng
+                <a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="quanlytindang.php">Đăng
                   tin tuyển dụng</a>
               </li>
               <li>
@@ -740,9 +724,10 @@
         </div>
       </div>
     </footer>
-    <script src="./js/jobs.js"></script>
-    <script src="./js/applications.js"></script>
+    <!-- Tải các file JS -->
+    <script src="./js/utils.js"></script>
     <script src="./js/auth.js"></script>
+    <script src="./js/jobs.js"></script>
   </body>
 
 </html>

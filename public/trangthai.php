@@ -300,6 +300,7 @@
         </div>
       </main>
     </div>
+    <script src="./js/utils.js"></script>
     <script src="./js/auth.js"></script>
     <script src="./js/applications.js"></script>
     <script>

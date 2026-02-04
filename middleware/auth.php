@@ -5,8 +5,10 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
 function authenticate($allowed_roles = []) {
-    $headers = apache_request_headers();
-    $authHeader = $headers['Authorization'] ?? '';
+    $headers = function_exists('apache_request_headers') ? apache_request_headers() : [];
+    $authHeader = $headers['Authorization']
+        ?? $headers['authorization']
+        ?? ($_SERVER['HTTP_AUTHORIZATION'] ?? ($_SERVER['REDIRECT_HTTP_AUTHORIZATION'] ?? ''));
     
     if (!$authHeader) {
         http_response_code(401);
